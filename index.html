@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Augen-pro Ai</title>
+    <link rel="icon" href="/images/Pasted image.png" type="image/svg+xml">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="nav">
+      <div id="nav-part-1">
+        <svg
+          width="19"
+          height="20"
+          viewBox="0 0 19 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          data-v-4b5b0323=""
+        >
+          <path
+            d="M6.20742 9.02441H0.12651C0.0566404 9.02441 0 9.08105 0 9.15092V9.85095C0 9.92081 0.0566404 9.97745 0.12651 9.97745H6.20742C6.27728 9.97745 6.33392 9.92081 6.33392 9.85095V9.15092C6.33392 9.08105 6.27728 9.02441 6.20742 9.02441Z"
+            fill="currentColor"
+          ></path>
+          <path
+            d="M18.8754 9.02441H12.7945C12.7246 9.02441 12.668 9.08105 12.668 9.15092V9.85095C12.668 9.92081 12.7246 9.97745 12.7945 9.97745H18.8754C18.9453 9.97745 19.0019 9.92081 19.0019 9.85095V9.15092C19.0019 9.08105 18.9453 9.02441 18.8754 9.02441Z"
+            fill="currentColor"
+          ></path>
+          <path
+            d="M9.02441 0.12657V6.20747C9.02441 6.27734 9.08105 6.33398 9.15092 6.33398H9.85094C9.92081 6.33398 9.97745 6.27734 9.97745 6.20747V0.12657C9.97745 0.0567002 9.92081 5.96046e-05 9.85094 5.96046e-05H9.15092C9.08105 5.96046e-05 9.02441 0.0567002 9.02441 0.12657Z"
+            fill="currentColor"
+          ></path>
+          <path
+            d="M9.0332 12.8028V18.8837C9.0332 18.9536 9.08984 19.0103 9.15971 19.0103H9.85974C9.9296 19.0103 9.98624 18.9536 9.98624 18.8837V12.8028C9.98624 12.733 9.9296 12.6763 9.85974 12.6763H9.15971C9.08984 12.6763 9.0332 12.733 9.0332 12.8028Z"
+            fill="currentColor"
+          ></path>
+          <path
+            d="M8.0754 7.40936C8.07773 7.40703 8.07772 7.40325 8.07539 7.40093L3.17103 2.50499C3.12043 2.45439 3.04452 2.45439 2.99392 2.50499L2.50475 2.99417C2.45415 3.04477 2.45415 3.12068 2.50475 3.17128L7.90425 8.57078C7.98157 8.6481 8.07962 8.72957 8.07962 8.83892V10.1715C8.07962 10.2305 8.05431 10.2811 8.02058 10.3233L2.50475 15.8391C2.45415 15.8897 2.45415 15.9656 2.50475 16.0162L2.99392 16.5054C3.04452 16.556 3.12043 16.556 3.17103 16.5054L8.07118 11.6053L8.3495 11.3269C8.77964 10.8968 9.02422 10.3149 9.02422 9.70762V9.31122C9.02422 8.70397 8.77964 8.12203 8.3495 7.6919L8.0754 7.41779C8.07307 7.41546 8.07307 7.41169 8.0754 7.40936Z"
+            fill="currentColor"
+          ></path>
+          <path
+            d="M10.99 8.68324C10.99 8.68467 10.9917 8.68538 10.9927 8.68437L16.5058 3.17128C16.5564 3.12067 16.5564 3.04477 16.5058 2.99417L16.0166 2.50499C15.966 2.45439 15.8901 2.45439 15.8395 2.50499L10.9394 7.40514L10.661 7.68346C10.2309 8.1136 9.98633 8.69554 9.98633 9.30279V9.69918C9.98633 10.3064 10.2309 10.8884 10.661 11.3185L10.9394 11.5968L15.8395 16.497C15.8901 16.5476 15.966 16.5476 16.0166 16.497L16.5058 16.0078C16.5564 15.9572 16.5564 15.8813 16.5058 15.8307L11.1063 10.4312C11.029 10.3539 10.9309 10.2724 10.9309 10.1631V8.83048C10.9309 8.77311 10.9548 8.7237 10.9871 8.68226C10.9881 8.68106 10.99 8.68172 10.99 8.68324Z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </div>
+
+        <!-- Menu icon for mobile view -->
+       <div id="menu-icon" class="hidden">
+         <i class="fas fa-bars"></i>
+       </div>
+      <div id="nav-part-2">
+        <a href="#">Wearable</a>
+        <a href="#">Neural</a>
+        <a href="#">Programs</a>
+        <a href="#">Updates</a>
+        <button id="search-button">Search</button>
+      </div>
+    </nav>
+
+       <!-- serach-bar -->
+      <div id="search-bar-container" class="hidden">
+        <input type="text" id="search-bar" placeholder="Search..." />
+      </div>
+    <div id="main">
+
+      <!-- home-section -->
+      <div id="home">
+        <div id="left-part">
+          <div id="inner-left">
+            <p id="inner-left-p">augen</p>
+            <h1>Beyond Humanware.</h1>
+            <div id="capsule-div">
+              <div class="capsules">Explore</div>
+              <div class="capsules">
+                <p>A <sup>1</sup>sense</p>
+              </div>
+              <div class="capsules">
+                <p>B <sup>1</sup>Eyes</p>
+              </div>
+              <div class="capsules">
+                <p>A <sup>1</sup>Neuro</p>
+              </div>
+            </div>
+            <div id="down-arrow">
+              <span><i class="fas fa-arrow-down"></i> </span>
+            </div>
+          </div>
+        </div>
+        <div id="right-part">
+          <div id="block">
+            <div id="text-massage">
+              <p>
+                Discover more about our latest updates.
+                <span><i class="fas fa-arrow-right"></i> </span>
+              </p>
+            </div>
+          </div>
+          <div id="image-container">
+            <img src="/images/filters_format(webp)_quality(70).jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- second-section -->
+      <div id="second-section">
+        <div id="Left-div">
+          <div id="inner-Left-div">
+            <p>Overview</p>
+            <p>What’s Augen</p>
+          </div>
+        </div>
+        <div id="Right-div">
+          <div id="second-section-h2">
+            <h2>
+              Augen is the first-of-its-kind AI Wearable <br />
+              Company bringing general-purpose devices
+            </h2>
+          </div>
+          <div id="inner-Right">
+            <div id="inner-right-span">
+              <span><i class="fas fa-arrow-right"></i></span>
+            </div>
+            <p id="second-section-p">Join our community</p>
+          </div>
+        </div>
+      </div>
+      <!-- thired-section -->
+      <div id="Thired-section">
+        <div id="prime-thired-div">
+          <p>At Augen</p>
+          <h3>We put Humans First</h3>
+        </div>
+        <div id="beta-thired-div">
+          <ul>
+            <li>
+              <div class="Thired-section-leftpart">
+                <p>01</p>
+                <span>Our mission</span>
+              </div>
+              <div class="thired-section-right2-part">
+                <h3>Make humans better—a lot better</h3>
+              </div>
+            </li>
+            <li>
+              <div class="Thired-section-leftpart">
+                <p>02</p>
+                <span>Our vision</span>
+              </div>
+              <div class="thired-section-right2-part">
+                <h3>Lead the future of Invisible Computing</h3>
+              </div>
+            </li>
+            <li>
+              <div class="Thired-section-leftpart">
+                <p>03</p>
+                <span>Our Ambition</span>
+              </div>
+              <div class="thired-section-right2-part">
+                <h3>Simplify Heads-Up Computing</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- fourth-section -->
+      <div id="fourth-section">
+        <div id="fourth-upperpart">
+          <div class="upper-class">
+            <span>__</span>
+            <p>Industries</p>
+            <h3>
+              Wearable & Neural <br />
+              technologies
+            </h3>
+          </div>
+          <div class="upper-class">
+            <span>__</span>
+            <p>Domain</p>
+            <h3>AI Wearable technologies</h3>
+          </div>
+          <div class="upper-class">
+            <span>__</span>
+            <p>Core Business</p>
+            <h3>augen.pro</h3>
+          </div>
+        </div>
+
+        <div id="fourth-lowwerpart">
+          <div id="fourth-lowwer-leftone">
+            <p>04</p>
+            <h3>How We Talk</h3>
+          </div>
+          <div id="fourth-lowwer-rightone">
+            <div class="fourth-innerOne">
+              <div class="fourth-innerOne-P-SPAN">
+                <p>
+                  [ <span>ehe <sup>1</sup></span> ]
+                </p>
+              </div>
+              <div class="fourth-innerOne-text">
+                Enhance <br />
+                Human <br />
+                Experience
+              </div>
+            </div>
+            <div class="fourth-innerOne">
+              <div class="fourth-innerOne-P-SPAN">
+                <p>[  <span> ICT </span>  ]</p>
+              </div>
+              <div class="fourth-innerOne-text">
+                Invisible <br />
+                Computing <br />
+                Technologies
+              </div>
+            </div>
+            <div class="fourth-innerOne">
+              <div class="fourth-innerOne-P-SPAN">
+                <p>[ <span>AIWC</span> ]</p>
+              </div>
+              <div class="fourth-innerOne-text">
+                Artificial <br />
+                Intelligence <br />
+                Wearable <br />
+                Company
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- fifth-section -->
+      <div id="fifth-section">
+        <div id="fifth-text">
+          <div id="SVG">
+            <svg
+              width="19"
+              height="20"
+              viewBox="0 0 19 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon"
+              data-v-4b5b0323=""
+            >
+              <path
+                d="M6.20742 9.02441H0.12651C0.0566404 9.02441 0 9.08105 0 9.15092V9.85095C0 9.92081 0.0566404 9.97745 0.12651 9.97745H6.20742C6.27728 9.97745 6.33392 9.92081 6.33392 9.85095V9.15092C6.33392 9.08105 6.27728 9.02441 6.20742 9.02441Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M18.8754 9.02441H12.7945C12.7246 9.02441 12.668 9.08105 12.668 9.15092V9.85095C12.668 9.92081 12.7246 9.97745 12.7945 9.97745H18.8754C18.9453 9.97745 19.0019 9.92081 19.0019 9.85095V9.15092C19.0019 9.08105 18.9453 9.02441 18.8754 9.02441Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M9.02441 0.12657V6.20747C9.02441 6.27734 9.08105 6.33398 9.15092 6.33398H9.85094C9.92081 6.33398 9.97745 6.27734 9.97745 6.20747V0.12657C9.97745 0.0567002 9.92081 5.96046e-05 9.85094 5.96046e-05H9.15092C9.08105 5.96046e-05 9.02441 0.0567002 9.02441 0.12657Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M9.0332 12.8028V18.8837C9.0332 18.9536 9.08984 19.0103 9.15971 19.0103H9.85974C9.9296 19.0103 9.98624 18.9536 9.98624 18.8837V12.8028C9.98624 12.733 9.9296 12.6763 9.85974 12.6763H9.15971C9.08984 12.6763 9.0332 12.733 9.0332 12.8028Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M8.0754 7.40936C8.07773 7.40703 8.07772 7.40325 8.07539 7.40093L3.17103 2.50499C3.12043 2.45439 3.04452 2.45439 2.99392 2.50499L2.50475 2.99417C2.45415 3.04477 2.45415 3.12068 2.50475 3.17128L7.90425 8.57078C7.98157 8.6481 8.07962 8.72957 8.07962 8.83892V10.1715C8.07962 10.2305 8.05431 10.2811 8.02058 10.3233L2.50475 15.8391C2.45415 15.8897 2.45415 15.9656 2.50475 16.0162L2.99392 16.5054C3.04452 16.556 3.12043 16.556 3.17103 16.5054L8.07118 11.6053L8.3495 11.3269C8.77964 10.8968 9.02422 10.3149 9.02422 9.70762V9.31122C9.02422 8.70397 8.77964 8.12203 8.3495 7.6919L8.0754 7.41779C8.07307 7.41546 8.07307 7.41169 8.0754 7.40936Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M10.99 8.68324C10.99 8.68467 10.9917 8.68538 10.9927 8.68437L16.5058 3.17128C16.5564 3.12067 16.5564 3.04477 16.5058 2.99417L16.0166 2.50499C15.966 2.45439 15.8901 2.45439 15.8395 2.50499L10.9394 7.40514L10.661 7.68346C10.2309 8.1136 9.98633 8.69554 9.98633 9.30279V9.69918C9.98633 10.3064 10.2309 10.8884 10.661 11.3185L10.9394 11.5968L15.8395 16.497C15.8901 16.5476 15.966 16.5476 16.0166 16.497L16.5058 16.0078C16.5564 15.9572 16.5564 15.8813 16.5058 15.8307L11.1063 10.4312C11.029 10.3539 10.9309 10.2724 10.9309 10.1631V8.83048C10.9309 8.77311 10.9548 8.7237 10.9871 8.68226C10.9881 8.68106 10.99 8.68172 10.99 8.68324Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+          <div id="SVG-text">
+            <h3>Meet Our</h3>
+          </div>
+        </div>
+        <div id="fifth-3Dimg">
+          <div id="TEXT-part">
+            <h3>Invisible</h3>
+            <h3>Approach</h3>
+          </div>
+          <div id="img">
+            <img src="/images/filters_format(webp)_quality(70).webp" alt="" />
+          </div>
+        </div>
+        <div id="fifth-lastPart">
+          <div id="fifth-LEFT">
+            <h3>
+              We’re currently in Research & Development <br />
+              phase on two innovative devices that will
+            </h3>
+            <h3>Enhance everyday life.</h3>
+          </div>
+          <div id="fifth-right">
+            <div><h3>Explore in depth</h3></div>
+            <div>
+              <div id="fifth-right-inner">
+                <div class="cps">
+                  <p>A <sup>1</sup> Sense</p>
+                </div>
+                <div class="cps">
+                  <p>B <sup>1</sup>Eye</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- sixith-section -->
+      <div id="sixith-section">
+        <div id="sixith-section-1">
+          <p>Our Progress</p>
+          <div id="sixith-section-1-inner">
+            <h3>The new Method</h3>
+            <div id="Capss">
+              <div class="CPSSS">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+              <div><span>Go to Updates</span></div>
+            </div>
+          </div>
+        </div>
+        <div id="sixith-section-2">
+          <h3>
+            <div>Where the future</div>
+            <div><span> is wearable . </span></div>
+          </h3>
+          <div>
+            <p>
+              We blend innovation and insight to transform bold visions into
+              reality, redefining the future of human enhancement with
+              cutting-edge wearable technologies such as A¹ Sense, B¹ Eye, and
+              A¹ Neuro.
+            </p>
+            <p>
+              These devices are not merely products; they are keys to
+              unparalleled human augmentation. With a mission focused on
+              enhancing the human experience, our company leads in the fields of
+              Invisible Sense, Spatial, and Neural Computing, aiming for a
+              future where technology amplifies human potential and makes every
+              moment extraordinary.
+            </p>
+          </div>
+        </div>
+        <div id="sixith-section-3">
+          <div id="sixth-section-image">
+            <img src="/images/Futuristic Fashion with VR.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- seventh-section -->
+      <div id="seventh-section">
+        <div id="seventh-section-3">
+          <div id="seventh-section-image">
+            <img
+              src="images/Futuristic Virtual Reality Experience.jpeg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div id="seventh-section-2">
+          <h3>
+            Radical Impact<br />
+            <div>for Our Life .</div>
+          </h3>
+          <div>
+            <p>
+              We aim to create advanced technological devices that are
+              seamlessly integrated with the human body, ensuring stability in
+              their use.
+            </p>
+            <p>
+              We always keep the end-users of our products in mind, prioritizing
+              safety, accessibility, and reliability throughout our engineering
+              process.
+            </p>
+          </div>
+        </div>
+        <div id="seventh-section-1">
+          <p>Our Aim</p>
+          <div id="seventh-section-1-inner">
+            <h3>Envisioning the future with a Pro-Human approach.</h3>
+            <div id="Capss">
+              <div class="CPSSS">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+              <div><span>Go to Updates</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- eight-section -->
+      <div id="eight-section">
+        <div>
+          <p>1.0</p>
+        </div>
+        <div id="eight-two">
+          <div>
+            <h4>Pitch Deck Pro</h4>
+          </div>
+          <div>
+            <p>
+              Request access to <br />
+              get more info on Augen.
+            </p>
+          </div>
+          <div id="arroeicon">
+            <div id="arroeicon-icon">
+              <i class="fas fa-arrow-down"></i>
+            </div>
+            <div><h4>Company Documentation</h4></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- nineth-section -->
+      <div id="nineth-section">
+        <div id="imgpluscapsule">
+          <p>
+            Through the use<span id="onespan"></span>of wearable technology, we
+            aim to enhance human capabilities and generate a positive impact on
+            the world. Stay<span id="twospan"></span>updated with our latest
+            technological innovations and advancements in research and
+            development. We always keep the end-users of our<span
+              id="threespan"
+            ></span
+            >products in mind, prioritizing safety, accessibility, and
+            reliability throughout our engineering process.
+          </p>
+        </div>
+      </div>
+
+      <!-- tenth-section -->
+      <div id="tenth-section">
+        <div id="tenth-first">
+          <div id="tenth-logo-1">
+            <svg
+              class="SVG1"
+              data-v-47bb011d=""
+              width="22"
+              height="20"
+              viewBox="0 0 55 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.42536 10.4706V8.97573H8.3883C7.70884 10.1246 6.49198 10.7176 5.11452 10.7176C2.29783 10.7176 0 8.59276 0 5.81313C0 2.73083 2.21135 0.575073 5.04657 0.575073C6.45492 0.575073 7.64089 1.10011 8.3883 2.19343H8.42536V0.834505H10.2352V10.4767H8.42536V10.4706ZM8.46243 5.66488C8.46243 3.78709 7.1035 2.21814 5.10216 2.21814C3.29232 2.21814 1.81602 3.76856 1.81602 5.66488C1.81602 7.56121 3.29232 9.05603 5.10216 9.05603C6.91201 9.05603 8.46243 7.49326 8.46243 5.66488Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M19.4394 10.4702V9.42632H19.4023C18.9329 10.2417 17.8334 10.7111 16.5671 10.7111C14.4978 10.7111 12.5459 9.59927 12.5459 6.20195V0.828003H14.3557V6.06606C14.3557 8.08592 15.1032 9.0557 16.7586 9.0557C18.414 9.0557 19.2788 7.88826 19.2788 6.029V0.828003H21.0886V10.4702H19.4332H19.4394Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M31.3962 9.20403C30.6488 10.2109 29.4504 10.7174 28.073 10.7174C25.3057 10.7174 22.9214 8.33308 22.9214 5.72641C22.9214 2.82324 25.1822 0.574829 28.0915 0.574829C29.3454 0.574829 30.6673 1.09987 31.4332 1.95229V0.840438H33.2431V9.21021C33.2431 12.3419 31.3097 14.2753 28.0421 14.2753C25.8307 14.2753 24.095 13.1079 23.2735 11.2301H25.2933C25.9728 12.1875 26.8746 12.6199 28.0606 12.6199C30.272 12.6199 31.4332 11.4216 31.4332 9.21021H31.3962V9.20403ZM31.427 5.65228C31.427 3.39152 29.7037 2.22408 28.0359 2.22408C26.2446 2.22408 24.7312 3.77449 24.7312 5.65228C24.7312 7.53008 26.2631 9.06196 28.0544 9.06196C30.1608 9.06196 31.427 7.21505 31.427 5.65228Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M36.6176 6.4317C37.0377 8.03153 38.3039 9.05691 39.7864 9.05691C40.9168 9.05691 41.9792 8.46392 42.5352 7.43855H44.345C43.5976 9.42135 41.7877 10.7123 39.7185 10.7123C37.0068 10.7123 34.814 8.3095 34.814 5.73371C34.814 2.68847 37.1118 0.563599 39.6691 0.563599C42.5043 0.563599 44.66 2.75642 44.66 5.52369C44.66 5.82018 44.66 6.09815 44.6106 6.42553H36.6238L36.6176 6.4317ZM42.844 5.04189C42.7019 3.405 41.2627 2.2252 39.7123 2.2252C38.1619 2.2252 36.7535 3.39264 36.6176 5.04189H42.844Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M53.1948 10.4703V5.21372C53.1948 3.17533 52.3918 2.22408 50.7919 2.22408C49.1921 2.22408 48.2532 3.39152 48.2532 5.20137V10.4765H46.4434V0.834261H48.1297V1.85964H48.1667C48.8771 0.939269 49.8716 0.574829 50.9834 0.574829C53.2998 0.574829 55.0046 2.03877 55.0046 4.70103V10.4765H53.1948V10.4703Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+          <div id="tenth-logo-2">
+            <svg
+              class="SVG2"
+              data-v-47bb011d=""
+              width="22"
+              height="20"
+              viewBox="0 0 19 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="logo"
+            >
+              <path
+                d="M6.20742 9.02441H0.12651C0.0566404 9.02441 0 9.08105 0 9.15092V9.85095C0 9.92081 0.0566404 9.97745 0.12651 9.97745H6.20742C6.27728 9.97745 6.33392 9.92081 6.33392 9.85095V9.15092C6.33392 9.08105 6.27728 9.02441 6.20742 9.02441Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M18.8754 9.02441H12.7945C12.7246 9.02441 12.668 9.08105 12.668 9.15092V9.85095C12.668 9.92081 12.7246 9.97745 12.7945 9.97745H18.8754C18.9453 9.97745 19.0019 9.92081 19.0019 9.85095V9.15092C19.0019 9.08105 18.9453 9.02441 18.8754 9.02441Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M9.02441 0.12657V6.20747C9.02441 6.27734 9.08105 6.33398 9.15092 6.33398H9.85094C9.92081 6.33398 9.97745 6.27734 9.97745 6.20747V0.12657C9.97745 0.0567002 9.92081 5.96046e-05 9.85094 5.96046e-05H9.15092C9.08105 5.96046e-05 9.02441 0.0567002 9.02441 0.12657Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M9.0332 12.8028V18.8837C9.0332 18.9536 9.08984 19.0103 9.15971 19.0103H9.85974C9.9296 19.0103 9.98624 18.9536 9.98624 18.8837V12.8028C9.98624 12.733 9.9296 12.6763 9.85974 12.6763H9.15971C9.08984 12.6763 9.0332 12.733 9.0332 12.8028Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M8.0754 7.40936C8.07773 7.40703 8.07772 7.40325 8.07539 7.40093L3.17103 2.50499C3.12043 2.45439 3.04452 2.45439 2.99392 2.50499L2.50475 2.99417C2.45415 3.04477 2.45415 3.12068 2.50475 3.17128L7.90425 8.57078C7.98157 8.6481 8.07962 8.72957 8.07962 8.83892V10.1715C8.07962 10.2305 8.05431 10.2811 8.02058 10.3233L2.50475 15.8391C2.45415 15.8897 2.45415 15.9656 2.50475 16.0162L2.99392 16.5054C3.04452 16.556 3.12043 16.556 3.17103 16.5054L8.07118 11.6053L8.3495 11.3269C8.77964 10.8968 9.02422 10.3149 9.02422 9.70762V9.31122C9.02422 8.70397 8.77964 8.12203 8.3495 7.6919L8.0754 7.41779C8.07307 7.41546 8.07307 7.41169 8.0754 7.40936Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M10.99 8.68324C10.99 8.68467 10.9917 8.68538 10.9927 8.68437L16.5058 3.17128C16.5564 3.12067 16.5564 3.04477 16.5058 2.99417L16.0166 2.50499C15.966 2.45439 15.8901 2.45439 15.8395 2.50499L10.9394 7.40514L10.661 7.68346C10.2309 8.1136 9.98633 8.69554 9.98633 9.30279V9.69918C9.98633 10.3064 10.2309 10.8884 10.661 11.3185L10.9394 11.5968L15.8395 16.497C15.8901 16.5476 15.966 16.5476 16.0166 16.497L16.5058 16.0078C16.5564 15.9572 16.5564 15.8813 16.5058 15.8307L11.1063 10.4312C11.029 10.3539 10.9309 10.2724 10.9309 10.1631V8.83048C10.9309 8.77311 10.9548 8.7237 10.9871 8.68226C10.9881 8.68106 10.99 8.68172 10.99 8.68324Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div id="tenth-second">
+          <div>
+            <div id="thenth-secon-part1">
+             <div>
+              <p>
+                1.0 <br />
+                Pages
+              </p>
+            </div>
+            <div id="tenthA">
+              <a href="#">A¹ Sense</a>
+              <a href="#">B¹ Eye</a>
+              <a href="#">A¹ Neuro</a>
+              <a href="#">Programs</a>
+              <a href="#">Updates</a>
+            </div>
+          </div>
+          </div>
+          <div id="thenth-secon-part2">
+          <div>
+          <p>  2.0 <br />
+            Follow</p>
+          </div>
+          <div id="tenthB">
+            <a href="#">LinkedIn</a>
+            <a href="#">X</a>
+          </div>
+          </div>
+      </div>
+    </div>
+
+
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
